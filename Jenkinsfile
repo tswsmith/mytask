@@ -6,5 +6,10 @@ pipeline {
         sh 'mvn test'
       }
     }
+    stage('build') {
+      steps {
+        sh 'mvn package'
+      }
+    }
   }
 }
